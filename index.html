@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Webpage with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Interactive Webpage</h1>
+    <p>Demonstrating Event Listeners, Form Validation, and Interactive Elements</p>
+  </header>
+
+  <main class="main">
+    <!-- Form Section -->
+    <section class="form-section">
+      <form id="user-form" class="form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <span id="name-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <span id="email-error" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <span id="password-error" class="error-message"></span>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <p id="form-status" class="form-status"></p>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section class="interactive-section">
+      <h2>Interactive Elements</h2>
+      <button id="change-color-btn" class="btn">Change Background Color</button>
+      <button id="toggle-text-btn" class="btn">Toggle Text</button>
+      <p id="toggle-text" class="toggle-text">This text can be toggled.</p>
+
+      <!-- Fun Element: Click Counter -->
+      <div class="fun-element">
+        <h3>Click Counter</h3>
+        <p>You've clicked the button <span id="click-count">0</span> times.</p>
+        <button id="click-me-btn" class="btn">Click Me!</button>
+      </div>
+
+      <!-- Fun Element: Random Quote Generator -->
+      <div class="fun-element">
+        <h3>Random Quote Generator</h3>
+        <p id="random-quote">Click the button to generate a random quote!</p>
+        <button id="generate-quote-btn" class="btn">Generate Quote</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Happy Coding! 💻✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
